@@ -1,0 +1,67 @@
+.home-page{
+    box-sizing:border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 154px 250px 0;
+    @media screen and (max-width: 1200px){
+        padding:  20px 30px 0;
+        
+    }
+
+    &__input-search{   
+        width: 812px;
+        height: 80px;
+        @media screen and (max-width: 900px){
+            width: 70vw;
+            height: 60px;
+            min-width: 200px;
+            
+        }
+    }
+    &__title{
+        margin-top: 125px;
+        margin-right: auto;
+        display: flex;
+        &--icon{
+            width: 33px;
+            height: 29px;
+        }
+        &--content{
+            text-align: center;
+            font: normal normal bold 24px/30px Sofia Pro Bold;
+            font-weight: 900;
+            letter-spacing: 0px;
+            color: #1D1D1D;
+        }
+
+
+    }
+    &__container{
+        margin: 47px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media screen and (max-width: 1200px){
+            gap: 15px;
+            justify-content: center;
+            
+        }
+    }
+    &__pagination{
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        &--move{
+            position: absolute;
+            padding-top: 70px;
+            @media screen and (max-width: 600px){
+                width: 200px;
+                
+            }
+        }
+    }
+}

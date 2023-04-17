@@ -1,0 +1,109 @@
+.layout {
+    background-image: url('./../assets/Group.svg');
+    overflow-y: hidden;
+    background-size:cover;
+	&__wrapper {
+        width: 100vw;
+	    min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+        overflow-y: hidden;
+        .layout__header {
+            box-sizing:border-box;
+            height: 160px;
+            width: 100%;
+            background: #ff3e4e 0% 0% no-repeat padding-box;
+            opacity: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 140px;
+            @media screen and (max-width: 600px){
+                padding: 0 20px;
+            }
+            &__logo {
+                &--img{
+                    width: 160px;
+                    height: 54px;
+                    @media screen and (max-width: 600px){
+                        width: 130px;
+                        height: 34px;
+                    }
+                }
+            }
+            &__menu {
+                display: flex;
+                @media screen and (max-width: 600px){
+                    flex-direction: column;
+                    
+                }
+                div{
+                    position: relative;
+                    padding: 20px 12.5px;
+                    text-align: left;
+                    font: normal normal bold 20px/25px Sofia Pro;
+                    letter-spacing: 0px;
+                    color: #FCFCFC;
+                    opacity: 1;
+                    
+                    
+                }
+                div:last-child::before{
+                    position:absolute;
+                    top:0;
+                    left:30px;
+                    width:40%;
+                    border-top:1px solid #FCFCFC;
+                    content:"";
+                    
+                }
+                
+            }
+        }
+        .layout__component{
+            width: 100%;
+            height: 100%;
+        }
+        .layout__footer{
+            margin-top: auto;
+            width: 100%;
+            height: 100px;
+            background-image: url('./../assets/footer-1.svg');
+            background-size:cover;
+        }
+        .layout__bottom{
+            margin-top: auto;
+            padding: 0;
+            width: 100%;
+            height: 100px;
+            background-image: url('./../assets/footer-2.svg');
+            background-position:center center;
+            background-size:cover;
+        }
+        .layout__sign{
+            position: absolute;
+            background-image: url('./../assets/sign.svg');
+            width: 60px;
+            height: 26px;
+            @media screen and (max-width: 600px){
+                display: none;
+                
+            }
+        }
+        .first{
+            transform: translate(35vw, 250px);
+        }
+        .second{
+            transform: translate(25vw, 200px);
+        }
+        .third{
+            transform: translate(-35vw, 200px);
+        }
+        .fourth{
+            transform: translate(-45vw, 100vh);
+        }
+	}
+	
+}

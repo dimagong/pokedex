@@ -1,0 +1,23 @@
+.progress{
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    background: #FF3E4E1A 0% 0% no-repeat padding-box;
+    @media screen and (max-width: 800px){
+        width: 150px;
+        height: 30px;
+        
+    }
+    &-container{
+        height: 100%;
+        padding: 0.01em 16px;
+        border-radius: 8px 0 0 8px;
+        display: flex;
+        align-items: center;
+        font: normal normal normal 24px/29px Sofia Pro;
+    }
+    &-color{
+        color: #FCFCFC;
+        background: #FF3E4E 0% 0% no-repeat padding-box;
+    }
+}

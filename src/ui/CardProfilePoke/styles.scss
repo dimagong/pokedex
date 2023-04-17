@@ -1,0 +1,91 @@
+.card-profile{
+    
+    display: flex;
+    align-items: center;
+    background: #FCFCFC 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    border-width: 0;
+    max-width: 1364px;
+    width: 70vw;
+    min-width: 300px;
+    height: 648px;
+    @media screen and (max-width: 800px){
+        flex-direction: column;
+        height: 748px;
+        
+    }
+    &__img{
+        height: 588px;
+        margin: 0 30px;
+        width: 398px;
+        border: 2px solid #E8E8E8;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @media screen and (max-width: 800px){
+            margin: 20px 0px;
+            width: 200px;
+            height: 388px;
+            
+        }
+        &-label{
+            margin-top: 40px;
+            text-align: center;
+            font: normal normal bold 40px/49px Sofia Pro Bold;
+            letter-spacing: 0px;
+            color: #FF3E4E;
+        }
+    }
+    &__box{
+        &-content{
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 20px;
+            &-type{
+                padding: 10px 0;
+                margin-right: 20px;
+                width: 80px;
+                background: #FF3E4E1A 0% 0% no-repeat padding-box;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                
+            }
+            &-label{
+                font: normal normal bold 24px/30px Sofia Pro Bold;
+                letter-spacing: 0px;
+                color: #1D1D1D;
+            }
+        }
+        .box-statistics{
+            width: 450px;
+            justify-content: space-between;
+            @media screen and (max-width: 800px){
+                width: 250px;
+                
+            }
+        }
+        
+    }
+    .content-skills{
+        flex-direction: column;
+        align-items: start;
+        margin-top: 40px;
+        .type-skills{
+            padding: 10px 0px;
+            width: 140px;
+        }
+        .label-skills{
+            display: flex;
+            margin-top: 20px;
+            width: 140px;
+            word-break: break-all;
+        }
+    }
+    
+}

@@ -1,0 +1,28 @@
+.poke-page{
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing:border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 278px 40px;
+    @media screen and (max-width: 1200px){
+        padding:  20px 30px 0;
+        
+    }
+
+    &__back{
+        width: 100%;
+        padding-top: 154px;
+        display: flex;
+        align-items: center;
+        font: normal normal bold 24px/30px Sofia Pro Bold;
+        cursor: pointer;
+    }
+  
+    &__tab{
+        
+    }
+}

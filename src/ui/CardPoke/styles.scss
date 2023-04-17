@@ -1,0 +1,23 @@
+.card-poke{
+    width: 320px; 
+    height: 400px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__card-media{
+        margin: 20px auto;
+        width:280px;
+        height: 280px;
+        
+    }
+    &__card-content{
+		display: flex;
+		justify-content: center;
+        align-items: center;
+		background-color: #FF3E4E;
+		color: #FCFCFC;
+        
+    }
+}
+
